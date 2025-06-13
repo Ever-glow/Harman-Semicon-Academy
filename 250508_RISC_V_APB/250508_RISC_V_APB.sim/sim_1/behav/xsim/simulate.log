@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+---- TX LINE ----
+11111111---- TX LINE ----
+1111111111
+-----------------
+APB READ [4225000] ADDR=0x0 → PRDATA=0x00000001
+APB READ [4255000] ADDR=0x8 → PRDATA=0x00000001
+$finish called at time : 4355 ns : File "C:/work/CPU Design and Verification/250429_RISC_V_APB_UART/250429_RISC_V_APB_UART.srcs/sim_1/new/tb_0429_uart.sv" Line 63
+---- TX LINE ----
+1111111111
+-----------------
+APB READ [4225000] ADDR=0x0 → PRDATA=0x00000001
+APB READ [4255000] ADDR=0x8 → PRDATA=0x00000001
+$finish called at time : 4355 ns : File "C:/work/CPU Design and Verification/250429_RISC_V_APB_UART/250429_RISC_V_APB_UART.srcs/sim_1/new/tb_0429_uart.sv" Line 63

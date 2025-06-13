@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../250422_RISC_V_APB_GPIO.srcs/sources_1/imports/20250421_RISC_V_APB_RAM_GPIO/APB_Master.sv" \
+"../../../../250422_RISC_V_APB_GPIO.srcs/sources_1/new/fifo.sv" \
+"../../../../250422_RISC_V_APB_GPIO.srcs/sim_1/new/tb_0425_FIFO.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../250429_RISC_V_APB_UART.srcs/sources_1/0428_uart/apb_slaveintf_dual_fifo.sv" \
+"../../../../250429_RISC_V_APB_UART.srcs/sources_1/new/fifo.sv" \
+"../../../../250429_RISC_V_APB_UART.srcs/sources_1/0428_uart/uart.sv" \
+"../../../../250429_RISC_V_APB_UART.srcs/sources_1/0428_uart/uart_fifo.sv" \
+"../../../../250429_RISC_V_APB_UART.srcs/sim_1/new/tb_0429_uart.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

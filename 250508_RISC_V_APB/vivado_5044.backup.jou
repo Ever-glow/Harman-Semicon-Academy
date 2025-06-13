@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  9 09:15:10 2025
+# Process ID: 5044
+# Current directory: C:/work/CPU Design and Verification/250508_RISC_V_APB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20176 C:\work\CPU Design and Verification\250508_RISC_V_APB\250508_RISC_V_APB.xpr
+# Log file: C:/work/CPU Design and Verification/250508_RISC_V_APB/vivado.log
+# Journal file: C:/work/CPU Design and Verification/250508_RISC_V_APB\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/work/CPU Design and Verification/250508_RISC_V_APB/250508_RISC_V_APB.xpr}
+update_compile_order -fileset sources_1

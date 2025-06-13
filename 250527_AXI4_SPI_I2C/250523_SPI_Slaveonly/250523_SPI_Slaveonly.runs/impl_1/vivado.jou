@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 26 12:52:27 2025
+# Process ID: 81380
+# Current directory: C:/work/CPUDesignandVerification/250523_SPI_Slaveonly/250523_SPI_Slaveonly.runs/impl_1
+# Command line: vivado.exe -log SPI_Slave.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SPI_Slave.tcl -notrace
+# Log file: C:/work/CPUDesignandVerification/250523_SPI_Slaveonly/250523_SPI_Slaveonly.runs/impl_1/SPI_Slave.vdi
+# Journal file: C:/work/CPUDesignandVerification/250523_SPI_Slaveonly/250523_SPI_Slaveonly.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source SPI_Slave.tcl -notrace

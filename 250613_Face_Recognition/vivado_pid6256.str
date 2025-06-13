@@ -1,0 +1,859 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 6256
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jun 11 12:15:41 KST 2025
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kccistc
+User home directory: C:/Users/kccistc
+User working directory: C:/work/VGA/250605_Face_Recognition
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/work/VGA/250605_Face_Recognition/vivado.log
+Vivado journal file location: 	C:/work/VGA/250605_Face_Recognition/vivado.jou
+Engine tmp dir: 	C:/work/VGA/250605_Face_Recognition/.Xil/Vivado-6256-DESKTOP-7CFQ9ND
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	134 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,116 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\work\VGA\250605_Face_Recognition\250605_Face_Recognition.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 89 MB (+91330kb) [00:00:12]
+// [Engine Memory]: 1,116 MB (+1018825kb) [00:00:12]
+// [GUI Memory]: 115 MB (+22024kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2396 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,116 MB. GUI used memory: 61 MB. Current time: 6/11/25, 12:15:42 PM KST
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.660 ; gain = 0.000 
+// Project name: 250605_Face_Recognition; location: C:/work/VGA/250605_Face_Recognition; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 130 MB (+9978kb) [00:00:55]
+// Elapsed time: 732 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 139 MB (+1868kb) [00:12:28]
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bz
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bz (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.2   **** Build date : Nov 18 2020 at 10:01:48     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2020.2   ****** Build date   : Nov 04 2020-06:02:56     **** Build number : 2020.2.1604437376       ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1104.660 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2703 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.runs/impl_1/TOP_System.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,419 MB (+1307683kb) [00:12:41]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,425 MB. GUI used memory: 79 MB. Current time: 6/11/25, 12:28:12 PM KST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.runs/impl_1/TOP_System.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 80 MB. Current time: 6/11/25, 12:30:27 PM KST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1274 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1214 ms. Increasing delay to 3642 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 81 MB. Current time: 6/11/25, 1:00:30 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 72 MB. Current time: 6/11/25, 1:30:33 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 71 MB. Current time: 6/11/25, 2:00:36 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 71 MB. Current time: 6/11/25, 2:30:39 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 71 MB. Current time: 6/11/25, 3:00:42 PM KST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 9952 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// Elapsed time: 15 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.runs/impl_1/TOP_System.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 71 MB. Current time: 6/11/25, 3:30:44 PM KST
+// Elapsed time: 2069 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2207 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // B
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1] 
+dismissDialog("Settings"); // d
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 4:00:47 PM KST
+// Elapsed time: 1674 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.runs/impl_1/TOP_System.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 75 MB. Current time: 6/11/25, 4:30:50 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 5:00:53 PM KST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 3089 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+closeMainWindow("250605_Face_Recognition - [C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.xpr] - Vivado 2020.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// A (cr): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Exit Vivado"); // A
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE false [get_runs impl_1] 
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 75 MB. Current time: 6/11/25, 5:30:56 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 6:00:59 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 6:31:02 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 7:01:04 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 7:31:07 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 8:01:10 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 8:31:13 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 9:01:16 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 9:31:19 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 10:01:21 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 10:31:24 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 11:01:27 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/11/25, 11:31:30 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 12:01:33 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 12:31:35 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 1:01:38 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 1:31:41 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 2:01:44 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 75 MB. Current time: 6/12/25, 2:31:47 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 3:01:49 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 3:31:52 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 4:01:55 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 4:31:58 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 5:02:01 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 5:32:04 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 6:02:07 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 6:32:09 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 7:02:12 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 7:32:15 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 8:02:18 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 8:32:21 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 9:02:23 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 9:32:26 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 74 MB. Current time: 6/12/25, 10:02:29 AM KST
+// Elapsed time: 61073 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 76 MB. Current time: 6/12/25, 10:32:32 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 76 MB. Current time: 6/12/25, 11:02:35 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 76 MB. Current time: 6/12/25, 11:32:37 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 76 MB. Current time: 6/12/25, 12:02:40 PM KST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// o (cr): Close Hardware Target: addNotify
+// Elapsed time: 7721 seconds
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 34 seconds
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.runs/impl_1/TOP_System.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 12:32:43 PM KST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7A2CA 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 1:02:45 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 1:32:46 PM KST
+// Elapsed time: 5801 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 2:02:46 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 2:32:49 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 3:02:52 PM KST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 3:32:55 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 4:02:57 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 4:33:00 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 5:03:03 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 5:33:06 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 6:03:09 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 6:33:12 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 7:03:15 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 7:33:17 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 8:03:20 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 8:33:23 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 9:03:26 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 9:33:29 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 10:03:32 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 10:33:35 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/12/25, 11:03:37 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/12/25, 11:33:40 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 12:03:43 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 12:33:46 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 1:03:49 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 1:33:52 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 2:03:55 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 2:33:57 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 3:04:00 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 3:34:03 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 4:04:06 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/13/25, 4:34:09 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/13/25, 5:04:11 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 5:34:14 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 6:04:17 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 6:34:20 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 7:04:22 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 7:34:25 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 8:04:28 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 8:34:31 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 9:04:34 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 9:34:36 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 10:04:39 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/13/25, 10:34:42 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 79 MB. Current time: 6/13/25, 11:04:45 AM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,445 MB. GUI used memory: 78 MB. Current time: 6/13/25, 11:34:48 AM KST
+// Elapsed time: 79544 seconds
+closeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 26, false); // u
+// ce (cr): Synthesis is Out-of-date: addNotify
+dismissDialog("Synthesis is Out-of-date"); // ce
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // u
+// ce (cr): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a
+// bz (cr):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ce
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,119 MB. GUI used memory: 79 MB. Current time: 6/13/25, 12:01:16 PM KST
+// [Engine Memory]: 3,119 MB (+607027kb) [47:45:48]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,122 MB. GUI used memory: 79 MB. Current time: 6/13/25, 12:01:22 PM KST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 163 MB (+18252kb) [47:45:56]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1830 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2858.609 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4298 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/constrs_1/imports/xdc/Basys-3-Master.xdc] Finished Parsing XDC File [C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/constrs_1/imports/xdc/Basys-3-Master.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2990.465 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3152.246 ; gain = 564.348 
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aI (cr): Report Timing Summary: addNotify
+// Elapsed time: 24 seconds
+dismissDialog("Report Timing Summary"); // aI
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+// RouteApi::initDelayMediator elapsed time: 5.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; -1.9406431913375854 ; -27.43145179748535 ; 0.10551692545413971 ; 0.0 ; 0.0 ; 0.18686099350452423 ; 0 ; 9425 ; 9541 ; 28.5 ; 0 ; 3 ; Wed Jun 11 12:05:17 KST 2025 ; 00:02:17 ; Vivado Implementation Defaults (Vivado Implementation 2020) ; Vivado Implementation Default Reports (Vivado Implementation 2020) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "Off", 4, false); // az
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// [Engine Memory]: 3,277 MB (+1985kb) [47:46:04]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cr): Close Design: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a
+// bz (cr):  Close : addNotify
+dismissDialog("Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,297 MB. GUI used memory: 109 MB. Current time: 6/13/25, 12:01:44 PM KST
+// Engine heap size: 3,297 MB. GUI used memory: 110 MB. Current time: 6/13/25, 12:01:44 PM KST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// ce (cr): Implementation is Out-of-date: addNotify
+dismissDialog("Close"); // bz
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+// bz (cr):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // ce
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,375 MB. GUI used memory: 89 MB. Current time: 6/13/25, 12:01:53 PM KST
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// [Engine Memory]: 3,445 MB (+4915kb) [47:46:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3621.410 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4298 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3693.578 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3693.578 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3693.578 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.9s
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3763.305 ; gain = 141.895 
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 173 MB (+1465kb) [47:46:29]
+// [GUI Memory]: 184 MB (+2464kb) [47:46:29]
+// [GUI Memory]: 194 MB (+1751kb) [47:46:30]
+// [GUI Memory]: 205 MB (+706kb) [47:46:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  3008 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 3,627 MB (+10148kb) [47:46:32]
+// 'dV' command handler elapsed time: 19 seconds
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Open Implemented Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,712 MB. GUI used memory: 147 MB. Current time: 6/13/25, 12:02:11 PM KST
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTable(PAResourceItoN.IntraClocksSectionPanel_INTRA_CLOCKS_SECTION_TABLE, "sys_clk_pin ; rise - rise ; -1.941 ; -27.431 ; 24 ; 19150 ; rise - rise ; 0.106 ; 0 ; 0 ; 19150 ; 4.5 ; 0 ; 0 ; 9514", 0, "-27.431", 3); // t
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true, false, false, false, false, true); // a - Double Click - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin]", 6, true); // a - Node
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin]", 6); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin, Setup -1.941 ns]", 7, false); // a
+// Elapsed time: 21 seconds
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "From", 4); // h
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Total Delay", 6); // h
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 10, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups]", 11, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, sys_clk_pin, Setup -1.941 ns]", 7, false); // a
+selectTab((HResource) null, (HResource) null, "Methodology", 7); // aK
+// Elapsed time: 14 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK

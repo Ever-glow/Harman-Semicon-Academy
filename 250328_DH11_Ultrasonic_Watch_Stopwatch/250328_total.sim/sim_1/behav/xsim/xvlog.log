@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/TOP_UART_FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_UART_FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module fifo_control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/print_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_print_gen
+INFO: [VRFC 10-311] analyzing module print_gen_dist
+INFO: [VRFC 10-311] analyzing module print_gen_temp_humid
+INFO: [VRFC 10-311] analyzing module print_gen_time
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_UART
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-311] analyzing module baud_tick_gen
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_uart_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_fifo

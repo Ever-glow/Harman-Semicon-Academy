@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sim_1/new/tb_top.sv,1749361548,systemVerilog,,,,tb_full_flow,,uvm,,,,,,
+C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sources_1/imports/new/uart_tx.sv,1749022624,systemVerilog,,C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sim_1/new/tb_top.sv,,uart_tx,,uvm,,,,,,
+C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sources_1/new/frame2uart.sv,1749366434,systemVerilog,,C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sources_1/imports/new/uart_tx.sv,,frame_uart_sender_gray,,uvm,,,,,,

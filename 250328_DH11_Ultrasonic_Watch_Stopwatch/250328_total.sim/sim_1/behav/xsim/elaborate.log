@@ -1,0 +1,26 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b48088de7320457e9b5a4dd6c7961749 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_fifo_behav xil_defaultlib.tb_uart_fifo xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_tick_gen_default
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart
+Compiling module xil_defaultlib.TOP_UART
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.fifo_control_unit
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.print_gen_dist
+Compiling module xil_defaultlib.print_gen_temp_humid
+Compiling module xil_defaultlib.print_gen_time
+Compiling module xil_defaultlib.top_print_gen
+Compiling module xil_defaultlib.TOP_UART_FIFO
+Compiling module xil_defaultlib.tb_uart_fifo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_fifo_behav

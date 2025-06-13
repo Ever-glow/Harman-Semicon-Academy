@@ -1,0 +1,253 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Jun 11 12:06:22 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_System_control_sets_placed.rpt
+| Design       : TOP_System
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   175 |
+|    Minimum number of control sets                        |   175 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   176 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   175 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     9 |
+| >= 10 to < 12      |     7 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     3 |
+| >= 16              |   127 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              33 |           10 |
+| No           | No                    | Yes                    |             232 |           73 |
+| No           | Yes                   | No                     |               9 |            2 |
+| Yes          | No                    | No                     |            8785 |         5705 |
+| Yes          | No                    | Yes                    |             308 |          117 |
+| Yes          | Yes                   | No                     |             177 |           86 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                   |                              Enable Signal                             |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                   | U_CU/u_hr04/u_us_tick_gen/n_trigger                                    | reset_IBUF                                              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/r_scl                           | reset_IBUF                                              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/r_sda_i_1_n_0                   | reset_IBUF                                              |                1 |              1 |         1.00 |
+|  U_OV7670_VGA/U_VGAController/U_Pix_Counter/E[0] |                                                                        |                                                         |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/next_state                                   | reset_IBUF                                              |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/bitCount[3]_i_1_n_0             | reset_IBUF                                              |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                   | U_CU/U_CU/u_tick_500ms/FSM_sequential_state_reg[1]_0[0]                | reset_IBUF                                              |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_start_gen/sel                                           | reset_IBUF                                              |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                   | U_CU/u_hr04/u_us_tick_gen/E[0]                                         | reset_IBUF                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][4]_i_1_n_0 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_CU/u_UART_RX/tick_baudrate/E[0]                                      | reset_IBUF                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][5]_i_1_n_0 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][3]_i_1_n_0 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_CU/u_UART_RX/tick_baudrate/FSM_onehot_current_state_reg[0][0]        | reset_IBUF                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_blue[1][0][4]_i_1_n_0  |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_blue[1][0][3]_i_1_n_0  |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][2]_i_1_n_0 |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/FSM_onehot_sda_state[5]_i_1_n_0 | reset_IBUF                                              |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/dataBit[5]_i_1_n_0              | reset_IBUF                                              |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][4]_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][3]_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_CU/u_hr04/E[0]                                                       | reset_IBUF                                              |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/r_addr[6]_i_1_n_0               | reset_IBUF                                              |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Uart_Tx/busy_i_1_n_0                                    | reset_IBUF                                              |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/tmp_red[10]_i_1_n_0                          | U_OV7670_VGA/U_Frame_Uart/sharp_data_red[7]_i_1_n_0     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/uart_data[7]_i_1_n_0                         | reset_IBUF                                              |                3 |              8 |         2.67 |
+|  ov7670_pclk_IBUF_BUFG                           | U_OV7670_VGA/U_OV7670_MemComtroller/we_i_1_n_0                         | reset_IBUF                                              |                7 |              8 |         1.14 |
+|  clk_IBUF_BUFG                                   | U_CU/u_UART_RX/tick_baudrate/n_rx                                      | reset_IBUF                                              |                4 |              8 |         2.00 |
+|  ov7670_pclk_IBUF_BUFG                           | U_OV7670_VGA/U_OV7670_MemComtroller/pix_data[15]_i_1_n_0               | reset_IBUF                                              |                8 |              8 |         1.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/tmp_red[10]_i_1_n_0                          | U_OV7670_VGA/U_Frame_Uart/sharp_data_blue[7]_i_1_n_0    |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/tmp_red[10]_i_1_n_0                          | U_OV7670_VGA/U_Frame_Uart/sharp_data_green[7]_i_1_n_0   |                1 |              8 |         8.00 |
+|  ov7670_pclk_IBUF_BUFG                           | U_OV7670_VGA/U_OV7670_MemComtroller/v_counter0                         | reset_IBUF                                              |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                                   |                                                                        | U_OV7670_VGA/u_sccb/U_SCCB_controlUnit/SR[0]            |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_blue[1][0][6]_i_1_n_0  |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_blue[1][0][5]_i_1_n_0  |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_blue[1][0][7]_i_1_n_0  |                7 |             10 |         1.43 |
+|  U_OV7670_VGA/U_VGAController/U_Pix_Clk_Gen/CLK  | U_OV7670_VGA/U_VGAController/U_Pix_Counter/v_counter_1                 | reset_IBUF                                              |                3 |             10 |         3.33 |
+|  U_OV7670_VGA/U_VGAController/U_Pix_Clk_Gen/CLK  |                                                                        | reset_IBUF                                              |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][6]_i_1_n_0 |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_green[0][0][7]_i_1_n_0 |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_1_n_0   |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][5]_i_1_n_0   |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][6]_i_1_n_0   |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Uart_Tx/bit_idx[3]_i_1_n_0                              | reset_IBUF                                              |                2 |             12 |         6.00 |
+|  ov7670_pclk_IBUF_BUFG                           |                                                                        | reset_IBUF                                              |                8 |             13 |         1.62 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/addr_cnt[13]_i_1_n_0                         | reset_IBUF                                              |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/rAddr_ram[14]_i_1_n_0                        | reset_IBUF                                              |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG                                   | U_CU/u_hr04/u_us_tick_gen/c_tick_reg_0[0]                              | reset_IBUF                                              |                7 |             15 |         2.14 |
+|  clk_IBUF_BUFG                                   | U_CU/U_CU/u_tick_500ms/FSM_sequential_state_reg[2]_0[0]                | reset_IBUF                                              |                9 |             20 |         2.22 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/tmp_gaussian_red[15]_i_1_n_0                 |                                                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                   |                                                                        |                                                         |                8 |             30 |         3.75 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/tmp_red[10]_i_1_n_0                          |                                                         |                9 |             33 |         3.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][72][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][52][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][45][7]_i_1_n_0                   |                                                         |               53 |             72 |         1.36 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][47][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][61][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][69][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][48][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][4][7]_i_1_n_0                    |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][59][7]_i_1_n_0                   |                                                         |               53 |             72 |         1.36 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][5][7]_i_1_n_0                    |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][54][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][50][7]_i_1_n_0                   |                                                         |               55 |             72 |         1.31 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][53][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][62][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][63][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][66][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][67][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][68][7]_i_1_n_0                   |                                                         |               50 |             72 |         1.44 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][57][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][70][7]_i_1_n_0                   |                                                         |               50 |             72 |         1.44 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][71][7]_i_1_n_0                   |                                                         |               50 |             72 |         1.44 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][73][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][74][7]_i_1_n_0                   |                                                         |               45 |             72 |         1.60 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][76][7]_i_1_n_0                   |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][75][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][6][7]_i_1_n_0                    |                                                         |               38 |             72 |         1.89 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][46][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][60][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][78][7]_i_1_n_0                   |                                                         |               44 |             72 |         1.64 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][64][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][55][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][65][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][51][7]_i_1_n_0                   |                                                         |               53 |             72 |         1.36 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][90][7]_i_1_n_0                   |                                                         |               41 |             72 |         1.76 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][80][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][20][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][94][7]_i_1_n_0                   |                                                         |               45 |             72 |         1.60 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][9][7]_i_1_n_0                    |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][95][7]_i_1_n_0                   |                                                         |               50 |             72 |         1.44 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][88][7]_i_1_n_0                   |                                                         |               45 |             72 |         1.60 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][97][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][99][7]_i_1_n_0                   |                                                         |               50 |             72 |         1.44 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][85][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][89][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][83][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][81][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][84][7]_i_1_n_0                   |                                                         |               45 |             72 |         1.60 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][91][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][93][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][82][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][96][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][8][7]_i_1_n_0                    |                                                         |               40 |             72 |         1.80 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][87][7]_i_1_n_0                   |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][98][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][92][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[2][0][7]_i_1_n_0                    |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][16][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][18][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][15][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][17][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][19][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][1][7]_i_1_n_0                    |                                                         |               38 |             72 |         1.89 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][104][7]_i_1_n_0                  |                                                         |               45 |             72 |         1.60 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][106][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][107][7]_i_1_n_0                  |                                                         |               44 |             72 |         1.64 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][108][7]_i_1_n_0                  |                                                         |               44 |             72 |         1.64 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][109][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][10][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][110][7]_i_1_n_0                  |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][105][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][111][7]_i_1_n_0                  |                                                         |               41 |             72 |         1.76 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][100][7]_i_1_n_0                  |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][102][7]_i_1_n_0                  |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][101][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][103][7]_i_1_n_0                  |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][118][7]_i_1_n_0                  |                                                         |               40 |             72 |         1.80 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][113][7]_i_1_n_0                  |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][116][7]_i_1_n_0                  |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][117][7]_i_1_n_0                  |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][43][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][119][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][11][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][115][7]_i_1_n_0                  |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][114][7]_i_1_n_0                  |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][112][7]_i_1_n_0                  |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][12][7]_i_1_n_0                   |                                                         |               39 |             72 |         1.85 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][13][7]_i_1_n_0                   |                                                         |               43 |             72 |         1.67 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][44][7]_i_1_n_0                   |                                                         |               56 |             72 |         1.29 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][24][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][40][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][37][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][31][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][25][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][32][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][2][7]_i_1_n_0                    |                                                         |               41 |             72 |         1.76 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][22][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][26][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][27][7]_i_1_n_0                   |                                                         |               44 |             72 |         1.64 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][86][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][30][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][28][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][38][7]_i_1_n_0                   |                                                         |               52 |             72 |         1.38 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][23][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][41][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][29][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][34][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][3][7]_i_1_n_0                    |                                                         |               40 |             72 |         1.80 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][42][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][21][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][35][7]_i_1_n_0                   |                                                         |               51 |             72 |         1.41 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][39][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][33][7]_i_1_n_0                   |                                                         |               48 |             72 |         1.50 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][36][7]_i_1_n_0                   |                                                         |               54 |             72 |         1.33 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][56][7]_i_1_n_0                   |                                                         |               44 |             72 |         1.64 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][77][7]_i_1_n_0                   |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][79][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][49][7]_i_1_n_0                   |                                                         |               47 |             72 |         1.53 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][58][7]_i_1_n_0                   |                                                         |               49 |             72 |         1.47 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][7][7]_i_1_n_0                    |                                                         |               46 |             72 |         1.57 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/red_line[0][14][7]_i_1_n_0                   |                                                         |               42 |             72 |         1.71 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/window_red[0][0][7]_i_2_n_0                  |                                                         |               29 |             88 |         3.03 |
+|  clk_IBUF_BUFG                                   | U_OV7670_VGA/U_Frame_Uart/b8                                           | reset_IBUF                                              |               47 |            140 |         2.98 |
+|  clk_IBUF_BUFG                                   |                                                                        | reset_IBUF                                              |               61 |            209 |         3.43 |
++--------------------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 15 15:11:45 2025
+# Process ID: 4536
+# Current directory: C:/work/CPU Design and Verification/250410_ALL_Type_fixed/250410_ALL_Type_check/250410_ALL_Type/250414_RISC_V_ALL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1908 C:\work\CPU Design and Verification\250410_ALL_Type_fixed\250410_ALL_Type_check\250410_ALL_Type\250414_RISC_V_ALL\250414_RISC_V_ALL.xpr
+# Log file: C:/work/CPU Design and Verification/250410_ALL_Type_fixed/250410_ALL_Type_check/250410_ALL_Type/250414_RISC_V_ALL/vivado.log
+# Journal file: C:/work/CPU Design and Verification/250410_ALL_Type_fixed/250410_ALL_Type_check/250410_ALL_Type/250414_RISC_V_ALL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/work/CPU Design and Verification/250410_ALL_Type_fixed/250410_ALL_Type_check/250410_ALL_Type/250414_RISC_V_ALL/250414_RISC_V_ALL.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_RV32I.tcl
+relaunch_sim
+close_sim

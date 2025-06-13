@@ -1,0 +1,1675 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 24 20:14:45 2025
+# Process ID: 105736
+# Current directory: C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/CPUDesignandVerification/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 103832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1106.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2128' bound to instance 'U0' of component 'axi_uartlite' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+	Parameter C_RATIO bound to: 54 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (1#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (3#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (4#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (5#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (6#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (7#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (8#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (9#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (10#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (10#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (10#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (10#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (11#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (12#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (13#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (14#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5edb/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2190]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (15#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:141]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:141]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (16#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (17#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (18#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' (19#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (20#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_REVISION bound to: (null) - type: string 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_BSCANID bound to: 76547328 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:12616' bound to instance 'U0' of component 'MDM' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:1656]
+INFO: [Synth 8-638] synthesizing module 'MDM' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_REVISION bound to: (null) - type: string 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_BSCANID bound to: 76547328 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:321' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:15905]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:355]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (21#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:345]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-3491] module 'MB_LUT1' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1469' bound to instance 'LUT1_I' of component 'MB_LUT1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:15923]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_LUT1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 2'b10 
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1505]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_LUT1' (22#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:1483]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:383' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:16391]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:406]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (23#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:396]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_REG_NUM_CE bound to: 4 - type: integer 
+	Parameter C_REG_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'MDM_Core' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:5734' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:16489]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_REG_NUM_CE bound to: 4 - type: integer 
+	Parameter C_REG_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_TRACE_CLK_FREQ_HZ bound to: 200000000 - type: integer 
+	Parameter C_TRACE_CLK_OUT_PHASE bound to: 90 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_TRACE_ID bound to: 110 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7654]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_xil_scan_reset_control' (24#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:306]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7664]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:7674]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3017' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:10365]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_USE_BSCAN bound to: 0 - type: integer 
+	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer 
+	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer 
+	Parameter C_EXT_TRIG_RESET_VALUE bound to: 20'b11110001001000110100 
+	Parameter C_USE_UART bound to: 0 - type: integer 
+	Parameter C_UART_WIDTH bound to: 8 - type: integer 
+	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
+	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_EN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'config_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3599]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:297' bound to instance 'sel_with_scan_reset_i' of component 'xil_scan_reset_control' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3607]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:682' bound to instance 'FDC_I' of component 'MB_FDC_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3664]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:719]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (25#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:698]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:741' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3674]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:781]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (26#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:758]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000101100111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3868]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0000000101100111 
+	Parameter INIT bound to: 16'b0000000101100111 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E' (27#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100001010000111 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3886]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100001010000111 
+	Parameter INIT bound to: 16'b0100001010000111 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized0' (27#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100010001000011 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3957]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0100010001000011 
+	Parameter INIT bound to: 16'b0100010001000011 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized1' (27#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0101100001001101 
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:804' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3975]
+INFO: [Synth 8-638] synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_STATIC bound to: 1 - type: bool 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter INIT bound to: 16'b0101100001001101 
+	Parameter INIT bound to: 16'b0101100001001101 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:832]
+INFO: [Synth 8-256] done synthesizing module 'mdm_v3_2_19_MB_SRL16E__parameterized2' (27#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:828]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (28#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:3290]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (29#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:6971]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (30#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8715/hdl/mdm_v3_2_vh_rfs.vhd:14299]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (31#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+	Parameter C_SCO bound to: 0 - type: integer 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_IRQ bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_DEBUG bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_CLK bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_TRACE_CLK bound to: 2 - type: integer 
+	Parameter C_FAULT_TOLERANT bound to: 0 - type: integer 
+	Parameter C_ECC_USE_CE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_SLAVE bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_MASTER bound to: 0 - type: integer 
+	Parameter C_ENDIANNESS bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTR_SIZE bound to: 32 - type: integer 
+	Parameter C_IADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_PIADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTANCE bound to: design_1_microblaze_0_0 - type: string 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_AREA_OPTIMIZED bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_DP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_D_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_M_AXI_IP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_I_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_D_LMB bound to: 1 - type: integer 
+	Parameter C_D_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_D_AXI bound to: 1 - type: integer 
+	Parameter C_I_LMB bound to: 1 - type: integer 
+	Parameter C_I_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_I_AXI bound to: 0 - type: integer 
+	Parameter G_TEMPLATE_LIST bound to: 0 - type: integer 
+	Parameter C_USE_MSR_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_PCMP_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BARREL bound to: 0 - type: integer 
+	Parameter C_USE_DIV bound to: 0 - type: integer 
+	Parameter C_USE_HW_MUL bound to: 0 - type: integer 
+	Parameter C_USE_FPU bound to: 0 - type: integer 
+	Parameter C_USE_REORDER_INSTR bound to: 1 - type: integer 
+	Parameter C_UNALIGNED_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_ILL_OPCODE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_DIV_ZERO_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FPU_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FSL_LINKS bound to: 0 - type: integer 
+	Parameter C_USE_EXTENDED_FSL_INSTR bound to: 0 - type: integer 
+	Parameter C_FSL_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_USE_STACK_PROTECTION bound to: 0 - type: integer 
+	Parameter C_IMPRECISE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_USE_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_EXT_BRK bound to: 0 - type: integer 
+	Parameter C_USE_EXT_NM_BRK bound to: 0 - type: integer 
+	Parameter C_USE_NON_SECURE bound to: 0 - type: integer 
+	Parameter C_USE_MMU bound to: 0 - type: integer 
+	Parameter C_MMU_DTLB_SIZE bound to: 4 - type: integer 
+	Parameter C_MMU_ITLB_SIZE bound to: 2 - type: integer 
+	Parameter C_MMU_TLB_ACCESS bound to: 3 - type: integer 
+	Parameter C_MMU_ZONES bound to: 16 - type: integer 
+	Parameter C_MMU_PRIVILEGED_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BRANCH_TARGET_CACHE bound to: 0 - type: integer 
+	Parameter C_BRANCH_TARGET_CACHE_SIZE bound to: 0 - type: integer 
+	Parameter C_PC_WIDTH bound to: 32 - type: integer 
+	Parameter C_PVR bound to: 0 - type: integer 
+	Parameter C_PVR_USER1 bound to: 8'b00000000 
+	Parameter C_PVR_USER2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DYNAMIC_BUS_SIZING bound to: 0 - type: integer 
+	Parameter C_RESET_MSR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_OPCODE_0x0_ILLEGAL bound to: 0 - type: integer 
+	Parameter C_DEBUG_ENABLED bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_PC_BRK bound to: 1 - type: integer 
+	Parameter C_NUMBER_OF_RD_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_WR_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_DEBUG_EVENT_COUNTERS bound to: 5 - type: integer 
+	Parameter C_DEBUG_LATENCY_COUNTERS bound to: 1 - type: integer 
+	Parameter C_DEBUG_COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEBUG_TRACE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
+	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
+	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
+	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
+	Parameter C_M0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ICACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_ICACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_ICACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_ICACHE_WR bound to: 1 - type: integer 
+	Parameter C_ADDR_TAG_BITS bound to: 17 - type: integer 
+	Parameter C_CACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_ICACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_ICACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_ICACHE_STREAMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_ICACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_IC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_IC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_DCACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_DCACHE_WR bound to: 1 - type: integer 
+	Parameter C_DCACHE_ADDR_TAG bound to: 17 - type: integer 
+	Parameter C_DCACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_DCACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
+	Parameter C_DCACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_DCACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_DCACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_DC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/9285/hdl/microblaze_v11_0_vh_rfs.vhd:164117' bound to instance 'U0' of component 'MicroBlaze' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:810]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (83#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:116]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:181]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 51 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:181]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:357]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:823]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (84#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:823]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:969]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (85#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:969]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1335]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (86#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1335]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000110000011111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+	Parameter P_M_AXILITE_MASK bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000110000011111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 3'b011 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (87#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (88#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000000110000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (88#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (89#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (90#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (91#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (92#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (92#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (93#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 1 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (93#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (93#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (94#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (94#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (95#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (96#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (97#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'design_1_xbar_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:784]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'design_1_xbar_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:788]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (98#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:357]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1101]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3134' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI_CTRL_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2527' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3511]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2110' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2681]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (99#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (100#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (101#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (102#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847' bound to instance 'POR_FF_I' of component 'FDS' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:171]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (103#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13847]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (104#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (105#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1247]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1247]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3134' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI_CTRL_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2527' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3511]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2110' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2681]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask__parameterized1' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask__parameterized1' (105#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2125]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (105#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2614]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (105#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3259]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (106#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (107#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1293]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1293]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: design_1_lmb_bram_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 32768 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 32768 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 32768 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 32768 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 32 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (118#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1318]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1318]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1318]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (119#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:1101]
+INFO: [Synth 8-6157] synthesizing module 'design_1_myip_axi_spi_m_0_2' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_myip_axi_spi_m_0_2/synth/design_1_myip_axi_spi_m_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'myip_axi_spi_m_v1_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myip_axi_spi_m_v1_0_S00_AXI' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0_S00_AXI.v:234]
+INFO: [Synth 8-226] default block is never used [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0_S00_AXI.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'myip_axi_spi_m_v1_0_S00_AXI' (120#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SPI_Master' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0.v:143]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter CP_DELAY bound to: 1 - type: integer 
+	Parameter CP0 bound to: 2 - type: integer 
+	Parameter CP1 bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Master' (121#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'myip_axi_spi_m_v1_0' (122#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_axi_spi_m_0_2' (123#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_myip_axi_spi_m_0_2/synth/design_1_myip_axi_spi_m_0_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (124#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (124#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (125#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (126#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (127#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (128#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (129#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:346]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (130#1) [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (131#1) [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1478.543 ; gain = 372.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1478.543 ; gain = 372.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1478.543 ; gain = 372.227
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.300 . Memory (MB): peak = 1478.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 635 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.srcs/constrs_1/imports/xdc/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.srcs/constrs_1/imports/xdc/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.srcs/constrs_1/imports/xdc/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1487.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 400 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDR => FDRE: 144 instances
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+  FDS => FDSE: 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 96 instances
+  MULT_AND => LUT2: 1 instance 
+  MUXCY_L => MUXCY: 137 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1487.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0/U0. (constraint file  C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc, line 49).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1/U0. (constraint file  C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc, line 64).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1/inst. (constraint file  C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc, line 69).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc, line 77).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0/U0. (constraint file  C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/dont_touch.xdc, line 85).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/myip_axi_spi_m_0. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for reset. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI_Master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     CP0 |                               01 |                               10
+                     CP1 |                               10 |                               11
+                CP_DELAY |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'SPI_Master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 5     
+	   3 Input    5 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 69    
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	             4096 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               43 Bit    Registers := 3     
+	               36 Bit    Registers := 2     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 33    
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 71    
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 31    
+	                1 Bit    Registers := 608   
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   3 Input   43 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 15    
+	   4 Input   32 Bit        Muxes := 7     
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input   15 Bit        Muxes := 10    
+	   3 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 23    
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 334   
+	  12 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 11    
+	   8 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0/U0/Reset' to pin 'design_1_i/rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_uartlite       | UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[15]                                                                                        | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_uartlite       | UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[15]                                                                                        | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[26]                                                                                                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[10]                                                                                                | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|MDM                | MDM_Core_I1/Use_BSCAN.Config_Reg_reg[3]                                                                                                 | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|blk_mem_gen_v8_4_4 | inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[22].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++-------------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[15] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | PC_Buffer_reg[3]          | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | ibuffer_reg[2]            | 43     | 43         | 43     | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2B1L    |     1|
+|2     |BSCANE2    |     1|
+|3     |BUFG       |     3|
+|4     |LUT1       |    32|
+|5     |LUT2       |   126|
+|6     |LUT3       |   308|
+|7     |LUT4       |   261|
+|8     |LUT5       |   283|
+|9     |LUT6       |   533|
+|11    |MMCME2_ADV |     1|
+|12    |MULT_AND   |     1|
+|13    |MUXCY_L    |   135|
+|14    |MUXF7      |   108|
+|15    |RAM32M     |    16|
+|16    |RAMB36E1   |    32|
+|17    |SRL16      |     1|
+|18    |SRL16E     |   116|
+|19    |SRLC16E    |     8|
+|20    |XORCY      |    94|
+|21    |FDCE       |    67|
+|22    |FDC        |     1|
+|23    |FDPE       |     7|
+|24    |FDR        |    95|
+|25    |FDRE       |  1217|
+|27    |FDS        |     1|
+|28    |FDSE       |    59|
+|29    |IBUF       |    12|
+|30    |OBUF       |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:01:00 . Memory (MB): peak = 1487.336 ; gain = 372.227
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1487.336 ; gain = 381.020
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1487.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 566 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1487.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 234 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 38 instances
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDR => FDRE: 95 instances
+  FDRE_1 => FDRE (inverted pins: C): 1 instance 
+  FDS => FDSE: 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  MULT_AND => LUT2: 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+262 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 1487.336 ; gain = 381.020
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 24 20:16:04 2025...

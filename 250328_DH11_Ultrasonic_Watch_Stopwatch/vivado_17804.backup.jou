@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 28 18:14:59 2025
+# Process ID: 17804
+# Current directory: C:/work/verilog/250328_total
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17272 C:\work\verilog\250328_total\250328_total.xpr
+# Log file: C:/work/verilog/250328_total/vivado.log
+# Journal file: C:/work/verilog/250328_total\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/verilog/250328_total/250328_total.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+open_run synth_1 -name synth_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_schematic -format pdf -orientation portrait C:/work/verilog/250328_total/stopwatch.pdf
+write_schematic -format pdf -orientation portrait C:/work/verilog/250328_total/temp_humid.pdf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_uart_fifo.v w ]
+add_files -fileset sim_1 C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_uart_fifo.v
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top.tcl
+restart
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_uart_fifo [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source tb_uart_fifo.tcl
+restart
+run 50 ms
+relaunch_sim
+restart
+run 50 ms
+relaunch_sim
+restart
+run 50 ms
+restart
+run 50 ms
+relaunch_sim
+restart
+run 50 ms
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/work/verilog/250328_total/250328_total.runs/impl_1/top_total.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

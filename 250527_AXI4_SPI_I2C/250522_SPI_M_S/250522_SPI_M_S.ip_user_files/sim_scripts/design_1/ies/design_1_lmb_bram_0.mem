@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+// Vivado v2020.2 (64-bit)
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Created on Saturday May 24, 2025 - 08:13:57 pm, from:
+//
+//     Map file     - c:\work\CPUDesignandVerification\250522_SPI_M_S\250522_SPI_M_S.gen\sources_1\bd\design_1\design_1.bmm
+//     Data file(s) - c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'design_1_microblaze_0.design_1_microblaze_0_local_memory_lmb_bram_128K_16_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

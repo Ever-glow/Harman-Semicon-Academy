@@ -1,0 +1,27 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/work/verilog/250328_total/250328_total.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_top.v,1743143007,verilog,,,,tb_top,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_uart_fifo.v,1743384683,verilog,,,,tb_uart_fifo,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/TOP_UART_FIFO.v,1743157005,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/fifo.v,,TOP_UART_FIFO,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/TOP_UART_STOPWATCH.v,1743133438,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/btn_debounce.v,,TOP_UART_STOPWATCH,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/btn_debounce.v,1741328762,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/fifo.v,,btn_debounce,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/fifo.v,1743125391,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/print_gen.v,,fifo;fifo_control_unit;register_file,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/fnd_controller.v,1743132045,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/imports/src_ip/fnd_controller.v,,bcd2seg_t;clk_divider_t;comparator_msec_t;counter_8_t;digit_splitter_t;fnd_controller_time;mux_2x1_t;mux_8x1_t;three2eight_t,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/stopwatch_cu.v,1741577433,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/stopwatch_dp.v,,stopwatch_cu,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/stopwatch_dp.v,1741683526,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/top.v,,clk_div_100Hz;stopwatch_dp;time_counter,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/top_stopwatch.v,1743131769,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/new/top_total.v,,top_stopwatch,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/uart.v,1742517167,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_uart_fifo.v,,TOP_UART;baud_tick_gen;uart;uart_rx;uart_tx,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/uart2stopwatch.v,1743133753,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/watch1_dp.v,,top_uart2stopwatch;uart2stopwatch,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/watch1_dp.v,1741836873,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/watch_cu.v,,clk_div_100Hz_w;time_counter_hour;time_counter_w;watch1_dp,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/watch_cu.v,1741763463,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sim_1/new/tb_top.v,,watch_cu,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/main.v,1743131906,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/new/main.v,,control_unit;tick_1us;top_distance,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/print_gen.v,1743161005,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/uart.v,,print_gen_dist;print_gen_temp_humid;print_gen_time;top_print_gen,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/top.v,1743139264,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/new/top_humid.v,,top_dist,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/imports/src_ip/fnd_controller.v,1743142213,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/new/fnd_controller_dist.v,,bcd2seg_ht;clk_divider_ht;counter_4_ht;digit_splitter_ht;fnd_controller_humid_temp;mux_4x1_ht;two2four_ht,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/new/main.v,1743047536,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/print_gen.v,,main;sensor_con;tick_gen,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/sources_1/new/top_humid.v,1743141801,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/top_stopwatch.v,,top_humid,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/new/fnd_controller_dist.v,1743131817,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/new/main.v,,bcd2seg;clk_divider;counter_4;digit_splitter;fnd_controller_dist;mux_4x1;two2four,,,,,,,,
+C:/work/verilog/250328_total/250328_total.srcs/sources_1/new/top_total.v,1743141205,verilog,,C:/work/verilog/250328_total/250328_total.srcs/sources_1/imports/code/uart.v,,mode_controller;top_total,,,,,,,,

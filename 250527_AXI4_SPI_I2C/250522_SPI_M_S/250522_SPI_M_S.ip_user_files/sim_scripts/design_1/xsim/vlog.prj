@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "../../../../250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/d0f7" --include "../../../../250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/5547/hdl/myip_axi_spi_m_v1_0.v" \
+"../../../bd/design_1/ip/design_1_myip_axi_spi_m_0_2/sim/design_1_myip_axi_spi_m_0_2.v" \
+"../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

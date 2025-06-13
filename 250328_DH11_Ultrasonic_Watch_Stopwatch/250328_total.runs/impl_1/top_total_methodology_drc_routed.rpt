@@ -1,0 +1,483 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Mar 28 20:25:33 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_total_methodology_drc_routed.rpt -pb top_total_methodology_drc_routed.pb -rpx top_total_methodology_drc_routed.rpx
+| Design       : top_total
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 83
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 42         |
+| LUTAR-1   | Warning          | LUT drives async reset alert  | 2          |
+| TIMING-16 | Warning          | Large setup violation         | 9          |
+| TIMING-18 | Warning          | Missing input or output delay | 30         |
++-----------+------------------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_DIST/U_FND_CON/u_counter_4/r_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_DIST/U_FND_CON/u_counter_4/r_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_HUMID_TEMP/u_fnd_con/u_counter_4/r_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_HUMID_TEMP/u_fnd_con/u_counter_4/r_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_db_run/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_hour/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_min/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_btn_sec/q_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_fnd_ctrl/u_counter_8/r_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_fnd_ctrl/u_counter_8/r_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin U_TOP_STW_W/U_STOPWATCH/u_fnd_ctrl/u_counter_8/r_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell U_TOP_STW_W/U_STOPWATCH/u_stopwatch_dp/u_clk_div/FSM_onehot_state[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U_TOP_STW_W/U_STOPWATCH/U_StopWatch_CU/FSM_onehot_state_reg[0]/PRE,
+U_TOP_STW_W/U_STOPWATCH/U_StopWatch_CU/FSM_onehot_state_reg[1]/CLR,
+U_TOP_STW_W/U_STOPWATCH/U_StopWatch_CU/FSM_onehot_state_reg[2]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[0]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[10]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[11]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[12]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[13]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[14]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[15]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[16]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[1]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[2]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[3]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_db_clear/counter_reg[4]/CLR
+ (the first 15 of 103 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell U_TOP_STW_W/U_STOPWATCH/u_watch1_dp/u_clk_div/FSM_sequential_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[0]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[10]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[11]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[12]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[13]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[14]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[15]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[16]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[1]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[2]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[3]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[4]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[5]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[6]/CLR,
+U_TOP_STW_W/U_STOPWATCH/u_btn_hour/counter_reg[7]/CLR
+ (the first 15 of 128 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -3.321 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -3.322 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -3.328 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -3.332 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -3.432 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -3.436 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -3.443 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -3.446 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -3.456 ns between U_TOP_DIST/U_TOP_DISTANCE/U_CU/echo_counter_reg_reg[9]/C (clocked by sys_clk_pin) and U_TOP_DIST/U_TOP_DISTANCE/U_CU/distance_reg_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnd relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btnl relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btnr relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btnu relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on dht_io relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on echo relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on rx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sw_mode[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on sw_mode[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on sw_mode[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on led[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on seg[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on trig relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on tx relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+

@@ -1,0 +1,6 @@
+Duplicated file found; will not be sent for synthesis: c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd
+Duplicated file found; will not be sent for synthesis: c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/0b98/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd
+Duplicated file found; will not be sent for synthesis: c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+Duplicated file found; will not be sent for synthesis: c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+Duplicated file found; will not be sent for synthesis: c:/work/CPUDesignandVerification/250522_SPI_M_S/250522_SPI_M_S.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd
+CRC performance measure: elapsed=00:00:00.003s;;memory_peak=3507.090MB;;memory_gain=0.000MB

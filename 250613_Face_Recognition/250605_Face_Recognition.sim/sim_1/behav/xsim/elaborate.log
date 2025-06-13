@@ -1,0 +1,16 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cb3881f324714b7db14bd578f3732b59 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_full_flow_behav xil_defaultlib.tb_full_flow xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'rData_ram' [C:/work/VGA/250605_Face_Recognition/250605_Face_Recognition.srcs/sim_1/new/tb_top.sv:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx(CLK_FREQ=10,BAUD=1)
+Compiling module xil_defaultlib.frame_uart_sender_gray(IMG_PIXEL...
+Compiling module xil_defaultlib.tb_full_flow
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_full_flow_behav
